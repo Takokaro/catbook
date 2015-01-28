@@ -4,6 +4,15 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  validates :first_name, presence: true
+  validates :last_name, presence: true
+  validates :profile_name, presence: true,
+                          uniqueness: true,
+                          format: {
+                            with: /\A[a-zA-Z][a-zA-Z0-9_-]+\z/,
+                            message: 'Must contain only letters, - or _'
+                          }
+  
   has_many :statuses
 
   def full_name
