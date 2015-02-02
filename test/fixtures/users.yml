@@ -3,3 +3,10 @@ cat:
   last_name: "Cat"
   email: "catcatcat@gmail.com"
   profile_name: "Cat"
+
+dog:
+  first_name: "Dog"
+  last_name: "Dog"
+  email: "dogdogdog@gmail.com"
+  profile_name: "Dog"
+ 

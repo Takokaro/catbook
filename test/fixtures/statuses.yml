@@ -7,3 +7,7 @@ one:
 two:
   content: MyText
   user: cat
+
+three: 
+  content: Woof! I'm a dog!
+  user: dog
